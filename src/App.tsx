@@ -9,6 +9,7 @@ import Services from "./sections/Services";
 import Contact from "./sections/Contact";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import WhatsAppButton from "./components/WhatsAppButton";
 import LoadingScreen from "./components/LoadingScreen";
 import { useEffect } from "react";
 import { motion } from "framer-motion";
@@ -30,6 +31,7 @@ function App() {
         <LoadingScreen />
         <Background />
         <Navbar />
+        <WhatsAppButton />
         
         <main>
           {[
