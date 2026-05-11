@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Canvas } from "@react-three/fiber";
-import { Float, MeshDistortMaterial, PresentationControls, Sphere } from "@react-three/drei";
+import { Float, MeshDistortMaterial, PresentationControls } from "@react-three/drei";
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
 
@@ -79,7 +79,7 @@ const Hero = () => {
             <PresentationControls
               global
               config={{ mass: 2, tension: 500 }}
-              snap={{ mass: 4, tension: 1500 }}
+              snap
               rotation={[0, 0.3, 0]}
               polar={[-Math.PI / 3, Math.PI / 3]}
               azimuth={[-Math.PI / 1.4, Math.PI / 1.4]}

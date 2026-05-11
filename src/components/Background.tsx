@@ -2,13 +2,14 @@ import { useRef, useMemo } from "react";
 import * as THREE from "three";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Points, PointMaterial, ScrollControls, useScroll, Float, MeshDistortMaterial } from "@react-three/drei";
+// @ts-ignore
 import * as random from "maath/random/dist/maath-random.esm";
 
 function SlidingPanels() {
   const scroll = useScroll();
   const groupRef = useRef<THREE.Group>(null!);
 
-  useFrame((state) => {
+  useFrame(() => {
     const offset = scroll.offset;
     if (groupRef.current) {
       // Panels slide horizontally based on scroll
@@ -40,7 +41,7 @@ function FloatingLiquid() {
   const meshRef = useRef<THREE.Mesh>(null!);
   const materialRef = useRef<any>(null!);
 
-  useFrame((state, delta) => {
+  useFrame((_state, delta) => {
     const offset = scroll.offset;
     
     // Smooth organic rotation
@@ -78,7 +79,7 @@ function FloatingLiquid() {
 
 function Scene() {
   const scroll = useScroll();
-  const pointsRef = useRef<any>();
+  const pointsRef = useRef<any>(null!);
   
   const sphere = useMemo(() => random.inSphere(new Float32Array(5000), { radius: 2.5 }) as Float32Array, []);
 
