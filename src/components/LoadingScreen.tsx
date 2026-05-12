@@ -51,9 +51,6 @@ const LoadingScreen = () => {
             </div>
           </motion.div>
 
-          <div className="absolute bottom-10 text-[10px] uppercase tracking-[0.5em] text-slate-300">
-            Premium Portfolio 2026
-          </div>
         </motion.div>
       )}
     </AnimatePresence>

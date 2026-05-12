@@ -108,7 +108,17 @@ html {
 }
 
 section {
-  min-height: 100vh;
+  min-height: 100dvh;
+  /* Use hardware acceleration where possible */
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+/* Fix for mobile address bar height changes */
+@supports (height: 100dvh) {
+  section {
+    min-height: 100dvh;
+  }
 }
 
 /* Three.js Canvas Container */

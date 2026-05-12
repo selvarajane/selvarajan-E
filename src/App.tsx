@@ -27,7 +27,7 @@ function App() {
 
   return (
     <SmoothScroll>
-      <div className="relative min-h-screen bg-background text-black selection:bg-blue-600 selection:text-white">
+      <div className="relative min-h-[100dvh] bg-background text-black selection:bg-blue-600 selection:text-white">
         <LoadingScreen />
         <Background />
         <Navbar />

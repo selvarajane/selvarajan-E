@@ -81,7 +81,7 @@ function Scene() {
   const scroll = useScroll();
   const pointsRef = useRef<any>(null!);
   
-  const sphere = useMemo(() => random.inSphere(new Float32Array(5000), { radius: 2.5 }) as Float32Array, []);
+  const sphere = useMemo(() => random.inSphere(new Float32Array(2000), { radius: 2.5 }) as Float32Array, []);
 
   useFrame((state) => {
     const offset = scroll.offset;
@@ -123,7 +123,7 @@ function Scene() {
 
 const Background = () => {
   return (
-    <div id="canvas-container">
+    <div id="canvas-container" className="h-[100dvh]">
       <Canvas camera={{ position: [0, 0, 5] }}>
         <ScrollControls pages={7} damping={0.1}>
           <Scene />
