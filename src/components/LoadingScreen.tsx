@@ -31,13 +31,13 @@ const LoadingScreen = () => {
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
-            className="relative"
+            className="relative text-center px-6"
           >
-            <div className="text-6xl font-black text-slate-900 mb-8 tracking-tighter">
+            <div className="text-3xl md:text-6xl font-black text-slate-900 mb-8 tracking-tighter">
               SELVARAJAN E.
             </div>
             
-            <div className="w-64 h-1 bg-slate-100 rounded-full overflow-hidden relative">
+            <div className="w-48 md:w-64 h-1 bg-slate-100 rounded-full overflow-hidden relative mx-auto">
               <motion.div
                 className="absolute top-0 left-0 h-full bg-blue-600"
                 initial={{ width: 0 }}

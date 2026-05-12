@@ -128,7 +128,7 @@ const Hero = () => {
       <motion.div
         animate={{ y: [0, 10, 0] }}
         transition={{ repeat: Infinity, duration: 2 }}
-        className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
+        className="absolute bottom-10 left-1/2 -translate-x-1/2 hidden lg:flex flex-col items-center gap-2"
       >
         <div className="w-6 h-10 border-2 border-gray-300 rounded-full flex justify-center p-1">
           <div className="w-1 h-2 bg-neon-blue rounded-full" />
