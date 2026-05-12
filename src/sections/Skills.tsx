@@ -82,7 +82,7 @@ const Skills = () => {
           viewport={{ once: true }}
           className="mb-16"
         >
-          <h2 className="text-4xl font-bold mb-4 text-slate-900">TECHNICAL EXPERTISE</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-slate-900">TECHNICAL EXPERTISE</h2>
           <div className="w-20 h-1 bg-blue-600 mx-auto" />
         </motion.div>
 
@@ -94,7 +94,7 @@ const Skills = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="glass-card p-8 group border-2 border-violet-600/80 hover:border-blue-600 flex flex-col h-full relative z-10 transition-all duration-500 shadow-md"
+              className="glass-card p-6 md:p-8 group border-2 border-violet-600/80 hover:border-blue-600 flex flex-col h-full relative z-10 transition-all duration-500 shadow-md"
             >
               <div className={`text-4xl mb-6 bg-gradient-to-br ${category.color} bg-clip-text text-transparent inline-block transition-transform group-hover:scale-110 w-fit mx-auto`}>
                 {category.icon}

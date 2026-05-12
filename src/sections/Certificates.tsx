@@ -1,12 +1,18 @@
 import { motion } from "framer-motion";
 import { FaCertificate, FaExternalLinkAlt } from "react-icons/fa";
 
+import cert1 from "./cert1.png";
+import cert2 from "./cert2.png";
+import cert3 from "./cert3.png";
+import cert4 from "./cert4.png";
+import cert5 from "./cert5.png";
+
 const certificates = [
   {
     title: "AI Python Fullstack",
     issuer: "Vetri Technology Solutions",
     date: "Oct 2025 - Apr 2026",
-    image: "src/sections/cert1.png",
+    image: cert1,
     link: "#",
     icon: <FaCertificate className="text-blue-600" />,
     grade: "A Grade (87.60%)"
@@ -15,7 +21,7 @@ const certificates = [
     title: "AI Python Fullstack Intern",
     issuer: "Vetri IT Systems Pvt Ltd",
     date: "Nov 2025 - Mar 2026",
-    image: "src/sections/cert2.png",
+    image: cert2,
     link: "#",
     icon: <FaCertificate className="text-emerald-600" />,
     grade: "Internship"
@@ -24,7 +30,7 @@ const certificates = [
     title: "Web Developer - Advanced",
     issuer: "TN Skill Corporation",
     date: "Mar 2026",
-    image: "src/sections/cert3.png",
+    image: cert3,
     link: "#",
     icon: <FaCertificate className="text-orange-600" />,
     grade: "Skill Competency"
@@ -33,7 +39,7 @@ const certificates = [
     title: "Python Fullstack Development",
     issuer: "Code Pilot",
     date: "Jul 2025 - Dec 2025",
-    image: "src/sections/cert4.png",
+    image: cert4,
     link: "#",
     icon: <FaCertificate className="text-indigo-600" />,
     grade: "Completion"
@@ -42,7 +48,7 @@ const certificates = [
     title: "Frontend Developer Intern",
     issuer: "Zop Technologys",
     date: "Jan 2026 - Feb 2026",
-    image: "src/sections/cert5.png",
+    image: cert5,
     link: "#",
     icon: <FaCertificate className="text-cyan-600" />,
     grade: "Internship"
@@ -67,7 +73,7 @@ const Certificates = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold mb-4 text-slate-900">CERTIFICATIONS & INTERNSHIPS</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-slate-900">CERTIFICATIONS & INTERNSHIPS</h2>
           <div className="w-20 h-1 bg-blue-600 mx-auto" />
         </motion.div>
 
@@ -94,7 +100,7 @@ const Certificates = () => {
                 />
               </div>
 
-              <div className="p-8 bg-white">
+              <div className="p-6 md:p-8 bg-white">
                 <div className="flex justify-between items-start mb-4">
                   <div>
                     <p className="text-blue-600 font-bold text-[10px] uppercase tracking-[0.2em] mb-1">{cert.grade}</p>

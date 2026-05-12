@@ -39,7 +39,7 @@ const Contact = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold mb-4 text-slate-900">GET IN TOUCH</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-slate-900 uppercase">GET IN TOUCH</h2>
           <div className="w-20 h-1 bg-blue-600 mx-auto" />
         </motion.div>
 
@@ -66,7 +66,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-bold text-slate-600 text-xs uppercase tracking-widest mb-1">Email</h4>
-                  <p className="text-xl font-bold text-slate-800">selvarajan0259@gmail.com</p>
+                  <p className="text-lg md:text-xl font-bold text-slate-800 break-all">selvarajan0259@gmail.com</p>
                 </div>
               </div>
               
@@ -76,7 +76,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-bold text-slate-600 text-xs uppercase tracking-widest mb-1">Phone</h4>
-                  <p className="text-xl font-bold text-slate-800">+91 9600295627</p>
+                  <p className="text-lg md:text-xl font-bold text-slate-800">+91 9600295627</p>
                 </div>
               </div>
 
@@ -86,7 +86,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-bold text-slate-600 text-xs uppercase tracking-widest mb-1">Location</h4>
-                  <p className="text-xl font-bold text-slate-800">Tiruvannamalai, India</p>
+                  <p className="text-lg md:text-xl font-bold text-slate-800">Tiruvannamalai, India</p>
                 </div>
               </div>
             </div>
@@ -109,7 +109,7 @@ const Contact = () => {
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="glass-card p-10 shadow-lg relative"
+            className="glass-card p-6 md:p-10 shadow-lg relative"
           >
             <AnimatePresence>
               {isSent && (

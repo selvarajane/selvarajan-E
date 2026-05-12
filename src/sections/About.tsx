@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-
-const profileImg = "src/sections/selvacoat.jpeg"; // Placeholder image
+import profileImg from "./selvacoat.jpeg";
+import resumePdf from "./Selvarajan Last Resume.pdf";
 
 const About = () => {
   return (
@@ -10,15 +10,15 @@ const About = () => {
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="max-w-4xl mx-auto glass-card p-12 relative"
+          className="max-w-4xl mx-auto glass-card p-6 md:p-12 relative"
         >
           <div className="absolute -top-10 -right-10 w-40 h-40 bg-blue-500/10 rounded-full blur-3xl" />
 
-          <h2 className="text-4xl font-bold mb-8 tracking-tight">
+          <h2 className="text-3xl md:text-4xl font-bold mb-8 tracking-tight">
             <span className="text-blue-600">01.</span> ABOUT ME
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
             <div className="space-y-6 text-slate-700 leading-relaxed">
               <p>
                 Hello! I'm <span className="font-bold text-slate-900">SELVARAJAN E</span>, a passionate developer based in Tiruvannamalai, India.
@@ -35,7 +35,7 @@ const About = () => {
                 bringing a mix of creative design and technical expertise to every project.
               </p>
               <a 
-                href="src/sections/Selvarajan Last Resume.pdf" 
+                href={resumePdf} 
                 download="Selvarajan_Resume.pdf"
                 className="inline-block px-6 py-3 glass border border-blue-500/30 rounded-lg hover:bg-blue-500/10 transition-all font-bold text-blue-600 text-center"
               >
@@ -49,9 +49,6 @@ const About = () => {
                   src={profileImg}
                   alt="SELVARAJAN E"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                  onError={(e) => {
-                    (e.target as HTMLImageElement).src = "src\sections\About.tsx";
-                  }}
                 />
               </div>
               <div className="absolute -inset-4 border-2 border-blue-500/20 rounded-2xl -z-10 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform duration-300" />

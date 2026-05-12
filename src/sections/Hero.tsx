@@ -26,7 +26,7 @@ const Hero = () => {
             Welcome to my universe
           </motion.p>
 
-          <h1 className="text-4xl md:text-7xl lg:text-8xl font-black mb-6 text-slate-900 leading-none">
+          <h1 className="text-4xl md:text-6xl lg:text-8xl font-black mb-6 text-slate-900 leading-none">
             HI, I'M <span className="gradient-text">SELVARAJAN E</span>
           </h1>
 

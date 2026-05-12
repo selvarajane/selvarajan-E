@@ -52,7 +52,7 @@ const Services = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold mb-4 text-slate-900 uppercase">MY SERVICES</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-slate-900 uppercase">MY SERVICES</h2>
           <div className="w-20 h-1 bg-blue-600 mx-auto mb-6" />
           <p className="text-slate-700 max-w-2xl mx-auto font-medium">
             I offer a wide range of creative and technical services to help you bring your ideas to life.
@@ -67,7 +67,7 @@ const Services = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="glass-card p-10 group border-2 border-violet-600/80 hover:border-blue-600 flex flex-col h-full bg-white/80 backdrop-blur-sm transition-all duration-500 rounded-3xl shadow-md"
+              className="glass-card p-6 md:p-10 group border-2 border-violet-600/80 hover:border-blue-600 flex flex-col h-full bg-white/80 backdrop-blur-sm transition-all duration-500 rounded-3xl shadow-md"
             >
               <div className="text-4xl text-blue-600 mb-8 group-hover:scale-110 transition-transform w-fit">
                 {service.icon}

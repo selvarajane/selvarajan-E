@@ -1,11 +1,16 @@
 import { motion } from "framer-motion";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
+import bcarImg from "./Bcar.png";
+import karpagamImg from "./karpagam.png";
+import murugaiyanImg from "./murugaiyan.png";
+import psgalleryImg from "./psgallery.png";
+
 const projects = [
   {
     title: "Bcar Car Rental",
     description: "A premium car rental platform featuring a modern booking system, real-time vehicle availability, and a sleek user interface.",
-    image: "src/sections/Bcar.png",
+    image: bcarImg,
     tags: ["React", "Vite", "Tailwind", "UI/UX"],
     github: "https://github.com/selvarajane/b_car.git",
     live: "https://bcar-two.vercel.app/"
@@ -13,7 +18,7 @@ const projects = [
   {
     title: "Sri Karpagam Jewellers",
     description: "An elegant e-commerce platform for a traditional jewelry store, featuring product galleries, detailed craftsmanship showcases, and a seamless shopping experience.",
-    image: "src/sections/karpagam.png",
+    image: karpagamImg,
     tags: ["React", "Node.js", "MongoDB", "E-commerce"],
     github: "https://github.com/selvarajane/karpagam.git",
     live: "https://karpagam-hazel.vercel.app/"
@@ -21,7 +26,7 @@ const projects = [
   {
     title: "SMMMS School Management",
     description: "A comprehensive management system designed to streamline school operations, from student tracking to administrative tasks.",
-    image: "src/sections/murugaiyan.png",
+    image: murugaiyanImg,
     tags: ["React", "Tailwind", "Firebase", "Dashboard"],
     github: "https://github.com/selvarajane/SMMMS-SCHOOL.git",
     live: "https://smmms-school.vercel.app/"
@@ -29,7 +34,7 @@ const projects = [
   {
     title: "Ps Gallery",
     description: "A comprehensive management system designed to streamline school operations, from student tracking to administrative tasks.",
-    image: "src/sections/psgallery.png",
+    image: psgalleryImg,
     tags: ["React", "Tailwind", "Firebase", "Dashboard"],
     github: "https://github.com/selvarajane/psgallery.git",
     live: "https://psgallery.vercel.app/"
@@ -55,7 +60,7 @@ const Projects = () => {
           className="mb-16 flex flex-col md:flex-row justify-between items-end gap-6"
         >
           <div>
-            <h2 className="text-4xl font-bold mb-4 text-slate-900 uppercase">FEATURED PROJECTS</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-slate-900 uppercase">FEATURED PROJECTS</h2>
             <div className="w-20 h-1 bg-blue-600" />
           </div>
           <p className="text-slate-700 max-w-md font-medium">

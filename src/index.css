@@ -34,6 +34,8 @@
     @apply bg-background text-foreground;
     font-family: 'Plus Jakarta Sans', sans-serif;
     overflow-x: hidden;
+    width: 100%;
+    max-width: 100vw;
   }
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Outfit', sans-serif;
@@ -46,7 +48,7 @@
   }
   
   .glass-card {
-    @apply bg-white/50 backdrop-blur-md border border-gray-200 rounded-2xl transition-all duration-300 hover:bg-white/80 hover:border-gray-300 hover:shadow-xl;
+    @apply bg-white/50 backdrop-blur-md border border-gray-200 rounded-2xl transition-all duration-300 hover:bg-white/80 hover:border-gray-300 hover:shadow-xl overflow-hidden;
   }
 
   .neon-text-blue {

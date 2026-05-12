@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion, useScroll, useSpring, AnimatePresence } from "framer-motion";
 import { FaBars, FaTimes } from "react-icons/fa";
+import resumePdf from "../sections/Selvarajan Last Resume.pdf";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -69,7 +70,7 @@ const Navbar = () => {
 
         <div className="hidden lg:block">
           <motion.a
-            href="src/sections/Selvarajan Last Resume.pdf"
+            href={resumePdf}
             target="_blank"
             rel="noopener noreferrer"
             initial={{ opacity: 0, scale: 0.8 }}
@@ -109,7 +110,7 @@ const Navbar = () => {
               </a>
             ))}
             <a
-              href="src/sections/Selvarajan Last Resume.pdf"
+              href={resumePdf}
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setIsOpen(false)}
